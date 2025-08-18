@@ -399,7 +399,6 @@
     SUBDIR += cdialog
     SUBDIR += cdk
     SUBDIR += cereal
-    SUBDIR += cervisia
     SUBDIR += cflow
     SUBDIR += cflow2vcg
     SUBDIR += cfr
@@ -1080,6 +1079,7 @@
     SUBDIR += jgoodies-looks
     SUBDIR += jiic
     SUBDIR += jiri
+    SUBDIR += jjui
     SUBDIR += jline
     SUBDIR += jna
     SUBDIR += jsap
@@ -4180,7 +4180,6 @@
     SUBDIR += pear-XML_Transformer
     SUBDIR += pear-XML_Tree
     SUBDIR += pear-XML_Util
-    SUBDIR += pear-channel-doctrine
     SUBDIR += pear-channel-ezc
     SUBDIR += pear-channel-geshi
     SUBDIR += pear-channel-horde
@@ -4615,6 +4614,7 @@
     SUBDIR += py-cachy
     SUBDIR += py-cadquery-pywrap
     SUBDIR += py-calver
+    SUBDIR += py-camel-converter
     SUBDIR += py-canonicaljson
     SUBDIR += py-capstone
     SUBDIR += py-capturer
