@@ -37,7 +37,7 @@
     "libs/**/*"
   ],
   "devDependencies": {
-    "@angular-devkit/build-angular": "19.2.14",
+    "@angular-devkit/build-angular": "19.2.18",
     "@angular-eslint/schematics": "19.6.0",
     "@angular/cli": "19.2.14",
     "@angular/compiler-cli": "19.2.14",
@@ -121,7 +121,7 @@
     "lint-staged": "16.0.0",
     "mini-css-extract-plugin": "2.9.2",
     "nx": "21.3.11",
-    "postcss": "8.5.3",
+    "postcss": "8.5.6",
     "postcss-loader": "8.1.1",
     "prettier": "3.6.2",
     "prettier-plugin-tailwindcss": "0.6.11",
@@ -145,7 +145,7 @@
     "wait-on": "8.0.3",
     "webpack": "5.99.7",
     "webpack-cli": "6.0.1",
-    "webpack-dev-server": "5.2.1",
+    "webpack-dev-server": "5.2.2",
     "webpack-node-externals": "3.0.0"
   },
   "dependencies": {
@@ -179,10 +179,10 @@
     "core-js": "3.45.0",
     "form-data": "4.0.4",
     "https-proxy-agent": "7.0.6",
-    "inquirer": "8.2.6",
+    "inquirer": "8.2.7",
     "jsdom": "26.1.0",
     "jszip": "3.10.1",
-    "koa": "2.16.1",
+    "koa": "3.0.3",
     "koa-bodyparser": "4.4.1",
     "koa-json": "2.0.2",
     "lit": "3.3.0",
