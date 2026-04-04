@@ -10457,7 +10457,7 @@ __metadata:
     color: "npm:3.2.1"
     compare-versions: "npm:6.1.1"
     debounce: "npm:1.2.1"
-    electron: "npm:39.2.3"
+    electron: "npm:39.8.5"
     electron-builder: "npm:24.13.3"
     electron-updater: "npm:6.6.2"
     electron-window-state: "npm:5.0.3"
@@ -26362,16 +26362,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron@npm:39.2.3":
-  version: 39.2.3
-  resolution: "electron@npm:39.2.3"
+"electron@npm:39.8.5":
+  version: 39.8.5
+  resolution: "electron@npm:39.8.5"
   dependencies:
     "@electron/get": "npm:^2.0.0"
     "@types/node": "npm:^22.7.7"
     extract-zip: "npm:^2.0.1"
   bin:
     electron: cli.js
-  checksum: 10/52e3af56a2a1796bbb681f532c6c2a62ccea3464550fd85caaa001abbc69a70d28e1e2760a17865a71e7840e91f3589694e01fe4420014d390c7424c69136189
+  checksum: 10/2cb90b9fcb8efbf434ee45a358623145ed0a59e820ddce778f17265a55d46e7aa6e5ddc245da1a4fc687ea86ff3c53d83aeb153fc48ba626f7de7643a1227f74
   languageName: node
   linkType: hard
 
