@@ -20,7 +20,7 @@
     "@joplin/lib": "~2.9",
     "@types/jest": "^30.0.0",
     "@types/node": "^18.7.13",
-    "axios": "^0.21.1",
+    "axios": "^0.31.0",
     "chalk": "^4.1.0",
     "copy-webpack-plugin": "^11.0.0",
     "dotenv": "^10.0.0",
