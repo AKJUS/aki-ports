@@ -5,6 +5,64 @@ they are unavoidable.
 You should get into the habit of checking this file for changes each time
 you update your ports collection, before attempting any port upgrades.
 
+20260907:
+  AFFECTS: Users of x11-wm/mango
+  AUTHOR: nivit@FreeBSD.org
+
+  Version 16.0.3 has some breaking changes. More details at these addresses:
+
+    1. https://github.com/mangowm/mango/releases/tag/0.15.0
+    2. https://github.com/mangowm/mango/releases/tag/0.15.5
+    3. https://github.com/mangowm/mango/releases/tag/0.16.0
+    4. https://github.com/mangowm/mango/releases/tag/0.16.1
+    5. https://github.com/mangowm/mango/releases/tag/0.16.3
+
+  Besides, it is not compatible with x11/waybar v. 0.15.0, so, if you use it,
+  you have to consider (temporarily) other alternatives like x11/sfwbar or
+  x11/mangobar, while waiting for a new version of waybar to be released.
+
+20260906:
+  AFFECTS: users of net/py-kombu
+  AUTHOR: michaelo@FreeBSD.org
+
+  * The option ZMQ has been dropped due to removed upstream support.
+  * The option BOTO has been renamed to SQS since it used multiple dependencies
+    to connect to Amazon SQS.
+
+20260905:
+  AFFECTS: users of www/pocketbase
+  AUTHOR: nxjoseph@FreeBSD.org
+
+  1) Please note that Go 1.27.0, which upstream has been switched to,
+  retrofitted `encoding/json` to use the v2 package under the hood but
+  unfortunately is not fully backward compatible. I recommend to not
+  push blindly an update on production and to test your PocketBase
+  application first locally to see if everything works correctly.
+
+  2) Note that there could be a slight breaking change in case you are
+  chaining PocketBase commands and relied on the previous `0` exit status
+  for `Command.RunE` returned errors. Or in other words, if you have
+  `./pocketbase invalid && someothercommand` and previously relied that
+  `someothercommand` will be always executed then this is no longer the
+  case and you'll have to adjust it or replace `&&` with `;`.
+
+20260902:
+  AFFECTS: users of mail/py-notmuch2
+  AUTHOR: jrm@FreeBSD.org
+
+  The package built from mail/py-notmuch2 has been renamed from
+  py312-notmuch0 to py312-notmuch2 to match the upstream name of the
+  CFFI-based Python bindings.  The 0 suffix was an editing error
+  introduced in 2021.  The port origin is unchanged, but installed
+  packages will not be upgraded automatically across the rename.  If
+  py312-notmuch0 is installed, run
+
+	pkg set -n py312-notmuch0:py312-notmuch2
+
+  before your next upgrade, or deinstall the old package and install
+  mail/py-notmuch2 again.  Substitute the py312 prefix if you use a
+  different Python version.
+
 20260830:
   AFFECTS: users of www/nginx-module-lua
   AUTHOR: joneum@FreeBSD.org
