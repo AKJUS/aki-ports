@@ -131,6 +131,7 @@
     SUBDIR += bksh
     SUBDIR += bkt
     SUBDIR += blisp
+    SUBDIR += blockio
     SUBDIR += bmd
     SUBDIR += bmd-plugin-avahi
     SUBDIR += bmd-plugin-hookcmd
@@ -221,6 +222,7 @@
     SUBDIR += cmockery2
     SUBDIR += cmogstored
     SUBDIR += cmospwd
+    SUBDIR += cni-dnsname
     SUBDIR += colorize
     SUBDIR += conan
     SUBDIR += confctl
@@ -282,6 +284,7 @@
     SUBDIR += ddrescueview
     SUBDIR += debhelper
     SUBDIR += debootstrap
+    SUBDIR += dekit
     SUBDIR += deltarpm
     SUBDIR += deltup
     SUBDIR += deskflow
@@ -317,6 +320,7 @@
     SUBDIR += docker-machine
     SUBDIR += docker-registry
     SUBDIR += dockerbox
+    SUBDIR += dockerbox-broker
     SUBDIR += doctl
     SUBDIR += doinkd
     SUBDIR += downtimed
@@ -552,11 +556,13 @@
     SUBDIR += inotify-tools
     SUBDIR += installwatch
     SUBDIR += intel-epct
-    SUBDIR += intel-nvmupdate-100g
-    SUBDIR += intel-nvmupdate-10g
-    SUBDIR += intel-nvmupdate-40g
+    SUBDIR += intel-nvmupdate-700series
     SUBDIR += intel-nvmupdate-e610
-    SUBDIR += intel-nvmupdate-e830
+    SUBDIR += intel-nvmupdate-e810
+    SUBDIR += intel-nvmupdate-e830-e835
+    SUBDIR += intel-nvmupdate-i210
+    SUBDIR += intel-nvmupdate-i225-i226
+    SUBDIR += intel-nvmupdate-x550
     SUBDIR += intel-pcm
     SUBDIR += intel-undervolt
     SUBDIR += inxi
@@ -771,7 +777,6 @@
     SUBDIR += mountsmb2
     SUBDIR += mpifileutils
     SUBDIR += mping
-    SUBDIR += mprocs
     SUBDIR += mptd
     SUBDIR += msiklm
     SUBDIR += msktutil

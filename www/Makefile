@@ -526,6 +526,8 @@
     SUBDIR += nginx-devel
     SUBDIR += nginx-full
     SUBDIR += nginx-lite
+    SUBDIR += nginx-module-array-var
+    SUBDIR += nginx-module-cache-purge
     SUBDIR += nginx-module-lua
     SUBDIR += nginx-module-lua-stream
     SUBDIR += nginx-module-ndk
@@ -1534,7 +1536,7 @@
     SUBDIR += py-azure-common
     SUBDIR += py-baize
     SUBDIR += py-beaker
-    SUBDIR += py-beautifulsoup
+    SUBDIR += py-beautifulsoup4
     SUBDIR += py-betamax
     SUBDIR += py-binarycookies
     SUBDIR += py-biscuits
@@ -1596,6 +1598,8 @@
     SUBDIR += py-dj60-drf-spectacular-sidecar
     SUBDIR += py-dj60-social-auth-app-django
     SUBDIR += py-dj60-strawberry-graphql-django
+    SUBDIR += py-dj61-django-stubs-ext
+    SUBDIR += py-dj61-djangorestframework
     SUBDIR += py-django-admin-rangefilter
     SUBDIR += py-django-advanced-filters
     SUBDIR += py-django-allauth

@@ -802,6 +802,7 @@
     SUBDIR += py-dbt-snowflake
     SUBDIR += py-dbutils
     SUBDIR += py-deltalake
+    SUBDIR += py-django-pgware
     SUBDIR += py-duckdb
     SUBDIR += py-duckdb_engine
     SUBDIR += py-fakeredis
@@ -953,6 +954,7 @@
     SUBDIR += redisbloom
     SUBDIR += redisjson
     SUBDIR += redisjson86
+    SUBDIR += redistimeseries
     SUBDIR += retcl
     SUBDIR += rocksdb
     SUBDIR += rocksdb-jni

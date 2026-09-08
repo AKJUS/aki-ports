@@ -1,6 +1,7 @@
 PORTNAME=	electron
 DISTVERSIONPREFIX=	v
 DISTVERSION=	${ELECTRON_VER}
+PORTREVISION=	1
 PULSEMV=	16
 PULSEV=		${PULSEMV}.1
 CATEGORIES=	devel
@@ -228,7 +229,7 @@ SNDIO_VARS_OFF=		GN_ARGS+=use_sndio=false
 # See ${WRKSRC}/electron/DEPS for CHROMIUM_VER
 CHROMIUM_VER=			150.0.7871.250
 # See ${WRKSRC}/electron/DEPS for NODE_VER
-NODE_VER=			24.19.0
+NODE_VER=			24.20.0
 # See ${WRKSRC}/electron/DEPS for NAN_VER
 NAN_VER=			675cefebca42410733da8a454c8d9391fcebfbc2
 # See ${WRKSRC}/electron/DEPS for SQUIRREL_MAC_VER
@@ -481,6 +482,8 @@ do-install:
 	${COPYTREE_SHARE} node_headers ${STAGEDIR}${DATADIR}
 	cd ${WRKSRC}/out/${BUILDTYPE} && \
 	${COPYTREE_SHARE} gen/electron/buildflags ${STAGEDIR}${DATADIR}
+	cd ${WRKSRC}/out/${BUILDTYPE} && \
+	${COPYTREE_SHARE} gen/electron/tsc ${STAGEDIR}${DATADIR}
 	cd ${WRKSRC}/out/${BUILDTYPE} && \
 	${COPYTREE_SHARE} gen/v8/embedded.S ${STAGEDIR}${DATADIR}
 	${RLN} ${STAGEDIR}${DATADIR}/electron \
