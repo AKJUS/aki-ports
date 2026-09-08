@@ -1,7 +1,7 @@
 PORTNAME=	nginx
 PORTVERSION=	${NGINX_VERSION}
 .include "version.mk"
-PORTREVISION=	6
+PORTREVISION=	7
 PORTEPOCH=	3
 CATEGORIES=	www
 MASTER_SITES=	https://nginx.org/download/ \
@@ -329,6 +329,16 @@ post-patch-SFLOW-on:
 
 pre-configure-SMALL_LIGHT-on:
 	( cd ${WRKSRC_small_light} && ./setup )
+
+pre-configure-ARRAYVAR-on:
+	@${RM} -rf ${WRKSRC_arrayvar}
+	@${CP} -R ${LOCALBASE}/share/nginx/modules/nginx-module-array-var ${WRKSRC_arrayvar}
+	@${CHMOD} -R u+w ${WRKSRC_arrayvar}
+
+pre-configure-CACHE_PURGE-on:
+	@${RM} -rf ${WRKSRC_cache_purge}
+	@${CP} -R ${LOCALBASE}/share/nginx/modules/nginx-module-cache-purge ${WRKSRC_cache_purge}
+	@${CHMOD} -R u+w ${WRKSRC_cache_purge}
 
 pre-configure-DEVEL_KIT-on:
 	@${RM} -rf ${WRKSRC_devel_kit}
